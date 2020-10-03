@@ -1,0 +1,143 @@
+
+
+
+.img-container{
+    display:grid;
+    width:100%;
+    height:auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                "img1"
+                "img2"
+                "img3"
+                "img4"
+                "img5"
+                "img6"
+                "img7"
+                "img8"
+                "img9"
+                "img10"
+                "img11"
+                "img12" 
+    
+    ;
+    
+}
+
+.img{
+    width:100%;
+    height:auto;
+}
+
+
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img11{
+    grid-area: img11;
+}
+.img12{
+    grid-area: img12;
+}
+/*
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+ @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }*/
+
+
+@media  only screen and (min-width:320px) and (max-width:768px){
+
+   .img{
+       width:100%;
+   }
+   .img-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+                "img1"
+                "img2"
+                "img3"
+                "img4"
+                "img5"
+                "img6"
+                "img7"
+                "img8"
+                "img9"
+                "img10"
+                "img11"
+                "img12"
+            ;
+    }
+}
+@media screen and (min-width:768px) and (max-width:960px){
+
+   .img-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+                "img1 img1 img2 img2"
+                "img3 img3 img4 img4"
+                "img5 img5 img6 img6"
+                "img7 img7 img8 img8"
+                "img9 img9 img10 img10"
+                "img11 img11 img12 img12"
+            ;
+    }
+
+}
+
+
+    
+@media screen and (min-width:1200px){
+  
+
+    .img-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+                "img1 img2 img3 img4"
+                "img5 img6 img7 img8"
+                "img9 img10 img11 img12"
+            ;
+    }
+ 
+}
